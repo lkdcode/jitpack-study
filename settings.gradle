@@ -7,3 +7,6 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
+include 'test-module'
+include 'lee-test-module'
+
