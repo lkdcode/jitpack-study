@@ -17,12 +17,21 @@ allprojects {
 
 dependencies {
     implementation project(':lee-test-module')
+    implementation project(':test-module')
 }
 
 subprojects {
     apply plugin: 'java'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
+
+//    publishing {
+//        publications {
+//            mavenJava(MavenPublication) {
+//                from components.java
+//            }
+//        }
+//    }
 }
 
 tasks.named('test') {
