@@ -1,2 +1,7 @@
 jdk:
   - openjdk17
+
+install:
+  - ./gradlew :lee-test-module:build
+  - ./gradlew :test-module:build
+  - ./gradlew build
